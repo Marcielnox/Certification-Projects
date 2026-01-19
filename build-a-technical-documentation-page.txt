@@ -1,0 +1,74 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <header>Fiora</header>
+      <ul>  
+       <li><a class="nav-link" href="#Welcome_to_fiora">Welcome to fiora</a></li>
+       <li><a class="nav-link" href="#Meet_the_party">Meet the party</a></li>
+       <li><a class="nav-link" href="#Story">Story</a></li>
+       <li><a class="nav-link" href="#Villains">Villains</a></li>
+       <li><a class="nav-link" href="#Fun">Fun</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Welcome_to_fiora">
+        <header>Welcome to fiora</header>
+        <p>Fiora is a world where things have only known peace for the last 2000 years, but recently things have begun to change and there are disturbances being felt all over.</p>
+        <p>The current tournament of peace will make determine what the next steps will be. All of you are a party brought together by circumstance and are now supposed to be a well oiled machine before you are sent on a very serious task.</p>
+        <code>push()</code>
+        <li>1</li>
+      </section>
+      <section class="main-section" id="Meet_the_party">
+        <header>Meet the party</header>
+        <p>Our party is conprised on the great heroes the pathfinders. In all honesty calling them heroes is a stretch but they are the good guys.</p>
+        <p>I guess the ammount of people they have saved can call them heroes but the decisions theyve made have caused people to walk extremely difficult paths.</p>
+        <code>push()</code>
+        <li>2</li>
+      </section>
+      <section class="main-section" id="Story">
+        <header>Story</header>
+        <p>The story so far, they party has managed to do everything they set out to do even defeating the avatar of the primordial god of light. They then proceded to release the gods they were meant to keep sealed because they wanted to stop the cycle.</p>
+        <p>They were swiftly killed by the gods they released and one of the gods decided to piece their souls back together in secret so that they may be able to stop his sister.</p>
+        <code>push()</code>
+        <li>3</li>
+      </section>
+      <section class="main-section" id="Villains">
+        <header>Villains</header>
+        <p>Solara the goddess of light is a primordial god and one of three pieces that make up the outter god Selabris.</p>
+        <p>Enebris is the other side of the coin, the god of darkness and one of the primordial gods that make up the outter god Selabris.</p>
+        <code>push()</code>
+        <li>4</li>
+      </section>
+      <section class="main-section" id="Fun">
+        <header>Fun</header>
+        <p>So far the party has had tons of fun exploring the world but they have finally reached the end of their journey.</p>
+        <p>They will now craft 5 promordial artifacts that will allow them to fight on equal footing with the gods.</p>
+        <code>push()</code>
+        <li>5</li>
+      </section>
+    </main>
+  
+  </body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+@media (min-width: 640px) {
+  #main-doc {
+    width: 700px;
+  }
+}
+
+** end of styles.css **
+
