@@ -1,0 +1,93 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+<body>
+  <header id="header">Thiebes Magic Shop
+    <img id="header-img" src="https://www.worldanvil.com/uploads/images/ab25b89395f80fcc723fe594fa67a8fe.jpg" alt="a fantasy magic shop" />
+    <nav id="nav-bar">
+      <ul>
+      <li><a class="nav-link" href="#potions">Potions</a></li>
+      <li><a class="nav-link" href="#armor">Armor</a></li>
+      <li><a class="nav-link" href="#weapons">Weapons</a></li>
+      <li><a class="nav-link" href="#complaints">File a complaint</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <video id="video" width="640" height="480" controls>
+      <source src="https://youtu.be/jaJDovtX4yk?si=hANO1P6ahltiLWhz" type="video/mp4">
+    </video>
+    <section id="potions">
+      <h2>Potion</h2>
+      <p>Here at the Thiebes magic shop we have a large variety of magical potions for all your magical and mundane needs. Need a potion of flight, we have it, need a potion of invisibility. We have somewhere its just invisible.</p>
+      <p>So come on down and tell us what you need, heck ill even give you some orange juice if thats what youre looking for.</p>
+    </section>
+    <section id="armor">
+      <h2>Armor</h2>
+      <p>Are you an adventurer that is in need of protection, well i have you covered, a wide variety of premade and custom made items here for sale. Some even going on sale due to the unfortunate loss of the previous owners.</p>
+    </section>
+    <section id="weapons">
+      <h2>Weapons</h2>
+      <p>We have some of the deadliest and shinniest weapons of all time here. Blunt swords that hit harder than sharp swords, sword that harness the elements, a wand that summons meteors? We have it all so come on down.</p>
+    </section>
+    <form id="form" action="https://www.freecodecamp.org/email-submit">
+    <h2 id="complaints">File a Complaint</h2>
+    <label for="name">Full Name: </label>
+    <input type="text" id="name" required="input" name="fullname">
+    <label for="email">Email: </label>
+    <input type="email" id="email" name="email" placeholder="janedoe@email.com" required="email">
+    <textarea cols="80" rows="10"></textarea>
+    <input type="submit" id="submit" value="Submit">
+    </main> 
+
+
+</body>
+
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+#nav-bar {
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 100%;
+  z-index: 1000;
+}
+body {
+  margin-top: 60px;
+}
+#nav-bar ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+a {
+  text-decoration: none;
+  color: red;
+  background: black;
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 500px;
+}
+
+** end of styles.css **
+
