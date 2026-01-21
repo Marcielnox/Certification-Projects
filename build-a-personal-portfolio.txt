@@ -1,0 +1,136 @@
+** start of index.html **
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <section id="welcome-section">
+      <h1>Welcome, My name is David, i am an aspiring web developer</h1>
+      <h2>Some basic info about me</h2>
+      <p>I have no background in tech and have recently gotten into coding since it seems like a good place to grow problem solving skills. So far i have found it enjoyable but i am finding that theres a lot to learn but im taking it one step at a time.</p>
+    </section>
+    <section id="project-section">
+      <h2 id="project-section-header">Take a look at my projects so far</h2>
+      <div class="projects">
+      <ul>
+        <li><a class="project-tile" href="https://codepen.io/Marcielnox/pen/OPXgVxm" target="_blank">Book Inventory Page</a></li>
+        <li><a class="project-tile" href="https://codepen.io/Marcielnox/full/xbOrGjK" target="_blank">Product Landing Page</a></li>
+        <li><a class="project-tile" href="https://codepen.io/Marcielnox/pen/LEZLVBp" target="_blank">Technical Document</a></li>
+        <li><a class="project-tile" href="https://codepen.io/Marcielnox/pen/ogLwXPb" target="_blank">Orbiting Moon</a></li>
+      </ul>
+    </section>
+    <section id="contact-me">
+      <h2>You can find me on</h2>
+      <p><a id="profile-link" href="https://github.com/Marcielnox" target="_blank">GitHub</a></p>
+    </section>
+    <nav id="navbar">
+      <a href="#welcome-section">Welcome</a>
+      <a href="#project-section">Projects</a>
+      <a href="#contact-me">Contact</a>
+    </nav>
+    
+  </body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#welcome-section {
+  height: 100vh;
+  padding: 6rem 2rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  text-align: center;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+#project-section {
+  padding: 4rem 2rem;
+  background-color: #f4f4f4;
+}
+
+.projects ul {
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.project-tile {
+  display: block;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+}
+
+.project-tile:hover {
+  background-color: #ddd;
+}
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  background-color: #222;
+  padding: 1rem;
+
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+#navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#navbar a:hover {
+  text-decoration: underline;
+}
+#contact-me {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+#profile-link {
+  font-size: 1.2rem;
+  color: #2a5298;
+  font-weight: bold;
+}
+@media (max-width: 600px) {
+  #navbar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  #welcome-section h1 {
+    font-size: 1.5rem;
+  }
+}
+
+** end of styles.css **
+
